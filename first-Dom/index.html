@@ -6,29 +6,51 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>DOM Activite</title>
       <link rel="stylesheet" href="style.css">
-
+      <style>
+            #food-title {
+                  color: green;
+            }
+      </style>
 </head>
 
 <body>
-      <ul>
-            <li>anu</li>
-            <li>rimi</li>
-            <li>ishani</li>
-            <li>ishita</li>
-      </ul>
-      <h1>Welcome to my Dom location</h1>
-      <h1>Hello HTML</h1>
-      <h1>Hi friends </h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta fuga voluptatibus beatae recusandae
-            similique sit?</p>
-      <h1>How are you</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, rerum.</p>
-      <h1>Hiiiiii!!!</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum delectus fugit voluptas autem nemo eos
-            atque suscipit perspiciatis exercitationem?</p>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <section>
+            <h1>Welcome to my Dom location</h1>
+            <ul>
+                  <li>anu</li>
+                  <li>rimi</li>
+                  <li>ishani</li>
+                  <li>ishita</li>
+            </ul>
+      </section>
+      <section>
+            <h1 id="food-title">My Fevreat Foods</h1>
+            <ol>
+                  <li>rice</li>
+                  <li>chaumin</li>
+                  <li>chilipanir</li>
+                  <li>chanamator</li>
+                  <li>gugni</li>
+                  <li>nanpuri</li>
+            </ol>
+      </section>
+      <section>
+            <h1>Hello HTML</h1>
+            <h1>Hi friends </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta fuga voluptatibus beatae recusandae
+                  similique sit?</p>
+            <h1>How are you</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, rerum.</p>
+            <h1>Hiiiiii!!!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum delectus fugit voluptas autem
+                  nemo eos
+                  atque suscipit perspiciatis exercitationem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </section>
 
       <script>
+            const idFoods = document.getElementById('food-title')
+            console.log(idFoods)
             // console.log('Hello javaScript')
             // console.log('Hi javaScript')
             const licalection = document.getElementsByTagName('li')
@@ -40,10 +62,10 @@
             // for (let heading of allHeading) {
             //       console.log(heading.innerText)
             // }
-            const allPeragraph = document.getElementsByTagName('p')
-            for (let peragraph of allPeragraph) {
-                  console.log(peragraph.innerText)
-            }
+            // const allPeragraph = document.getElementsByTagName('p')
+            // for (let peragraph of allPeragraph) {
+            //       console.log(peragraph.innerText)
+            // }
       </script>
       <script src="script.js"></script>
 </body>
