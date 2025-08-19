@@ -26,13 +26,21 @@
       <section>
             <h1 id="food-title">My Fevreat Foods</h1>
             <ol>
-                  <li>rice</li>
+                  <li id="idRice">rice</li>
                   <li>chaumin</li>
                   <li>chilipanir</li>
                   <li>chanamator</li>
                   <li>gugni</li>
                   <li>nanpuri</li>
             </ol>
+            <h1>favorite food</h1>
+            <ul>
+                  <li class="favorites">fuchka</li>
+                  <li class="favorites">chana</li>
+                  <li class="favorites">pizza</li>
+                  <li class="favorites">sanduchi</li>
+                  <li class="favorites">momo</li>
+            </ul>
       </section>
       <section>
             <h1>Hello HTML</h1>
@@ -49,23 +57,36 @@
       </section>
 
       <script>
+            // get eliment by id name
+            const riceItems = document.getElementById('idRice')
+            riceItems.innerText = 'rice is my fevarite'
+            // console.log(riceItems)
             const idFoods = document.getElementById('food-title')
-            console.log(idFoods)
+            // console.log(idFoods)
             // console.log('Hello javaScript')
             // console.log('Hi javaScript')
+            // all list itams
             const licalection = document.getElementsByTagName('li')
             // console.log(licalection)
             // for (let li of licalection) {
             //       // console.log(li.innerText)
             // }
+            // all heading h1
             // const allHeading = document.getElementsByTagName('h1')
             // for (let heading of allHeading) {
             //       console.log(heading.innerText)
             // }
+            // all paregraph
             // const allPeragraph = document.getElementsByTagName('p')
             // for (let peragraph of allPeragraph) {
             //       console.log(peragraph.innerText)
             // }
+            // foot title
+            // const foodheading = document.getElementById('food-title')
+            // console.log(foodheading)
+
+            // get element by class name 
+            const 
       </script>
       <script src="script.js"></script>
 </body>
