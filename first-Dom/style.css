@@ -5,3 +5,11 @@ p {
 h1 {
       color: red;
 }
+
+.section-card {
+      border: 2px solid purple;
+      background-color: lightgreen;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+}

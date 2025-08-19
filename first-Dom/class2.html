@@ -10,6 +10,18 @@
             .songs .music {
                   color: blueviolet;
             }
+
+            .bg-color {
+                  background-color: lightgreen;
+            }
+
+            .bold {
+                  font-weight: 100;
+            }
+
+            .big {
+                  font-size: 3em;
+            }
       </style>
 </head>
 
@@ -48,15 +60,26 @@
                         <li class="recipis">pasta </li>
                   </ul>
             </section>
+            <section id="players-container">
+                  <h1>favorite players</h1>
+                  <ul class="player-List">
+                        <li>farish</li>
+                        <li>sucho</li>
+                        <li>anu</li>
+                        <li>racho</li>
+                        <li>sabana</li>
+                  </ul>
+            </section>
             <script>
                   const favSong = document.getElementById('fevSong')
-                  console.log('favSong')
+                  // console.log('favSong')
                   const allSpans = document.querySelectorAll('body span')
                   // console.log(allSpans)
                   // for (let item of allSpans) {
                   //       console.log(item.innerHTML)
                   // }
             </script>
+            <script src="cssinJs.js"></script>
             <script src="script.js"></script>
       </main>
 </body>
