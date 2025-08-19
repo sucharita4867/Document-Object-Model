@@ -15,8 +15,20 @@
 
 <body>
       <main>
+            <section class="old-india">
+                  <p>Lorem ipsum dolor sit amet <span>sucho</span> consectetur adipisicing elit. Debitis, eum.</p>
+                  <p>Lorem <span>sucho</span> ipsum dolor, sit amet consectetur adipisicing elit. Animi, inventore unde?
+                        Autem quia
+                        <span>sucho</span>
+                        dignissimos quae nihil impedit, dolor ullam?
+                  </p>
+            </section>
             <section class="songs">
-                  <h1>my favorite songs</h1>
+                  <p>
+                        Lorem ipsum, dolor sit amet consecte <span>sucho</span> tur adipisicing elit. Fugit, culpa.
+                  </p>
+
+                  <h1 id="fevSong">my favorite songs</h1>
                   <ul>
                         <li class="music">song-1</li>
                         <li class="music">song-2</li>
@@ -24,6 +36,7 @@
                         <li>song-4</li>
                         <li>song-5</li>
                   </ul>
+                  <p>Lorem, ipsum dolor sit amet <span>sucho</span> consectetur adipisicing elit. Omnis, distinctio.</p>
             </section>
             <section class="foods">
                   <h1>my favorite foods</h1>
@@ -35,7 +48,15 @@
                         <li class="recipis">pasta </li>
                   </ul>
             </section>
-            <script></script>
+            <script>
+                  const favSong = document.getElementById('fevSong')
+                  console.log('favSong')
+                  const allSpans = document.querySelectorAll('body span')
+                  // console.log(allSpans)
+                  // for (let item of allSpans) {
+                  //       console.log(item.innerHTML)
+                  // }
+            </script>
             <script src="script.js"></script>
       </main>
 </body>
