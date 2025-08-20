@@ -13,8 +13,25 @@
 
       <p id="user-info">no user</p>
       <button id="btn-login">Login</button>
+      <br>
+      <br>
+      <br>
+      <p id="name-text">No Name</p>
+      <input id="name-input" type="text" placeholder="Your Name">
+      <button id="uped-btn">Update</button>
       <script>
-
+            document.getElementById('uped-btn')
+                  .addEventListener('click', function () {
+                        // console.log('update btn os done')
+                        // 2. get the text from the input filed
+                        const nameInput = document.getElementById('name-input')
+                        // console.log(nameInput)
+                        const name = nameInput.value
+                        // console.log('name', name)
+                        // 3.set the name
+                        const nameText = document.getElementById('name-text')
+                        nameText.innerText = name
+                  })
       </script>
       <script src="js/handler.js"></script>
 </body>
