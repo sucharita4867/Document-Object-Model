@@ -10,6 +10,8 @@
 <body>
 
       <button id="Mouse-btn">Micky Mouse</button>
+      <input type="text" name="name" id="input-name" placeholder="your Name">
+      <input type="text" name="name" id="input-email" placeholder="your Email">
       <script>
             // 1
             // document.getElementById('Mouse-btn').addEventListener('mouseenter', function () {
@@ -20,8 +22,28 @@
             //       console.log('micky mouse is runing')
             // })
             // 3
-            document.getElementById('Mouse-btn').addEventListener('mouseout', function () {
-                  console.log('micky mouse is runing')
+            // document.getElementById('Mouse-btn').addEventListener('mouseout', function () {
+            //       console.log('micky mouse is runing')
+            // })
+            // ---------------------------------
+            // 1
+            // document.getElementById('input-name').addEventListener('focus', function () {
+            //       console.log('user enter her name')
+            // })
+            // document.getElementById('input-email').addEventListener('focus', function () {
+            //       console.log('user enter her email')
+            // })
+            // -----------------------
+            // document.getElementById('input-name').addEventListener('blur', function () {
+            //       console.log('user done with name')
+            // }
+            // -----------------------
+            // document.getElementById('input-email').addEventListener('keydown', function (event) {
+            //       console.log('typing', event.target.value)
+            // })
+            // -----------------------------
+            document.getElementById('input-email').addEventListener('keyup', function (event) {
+                  console.log('typing', event.target.value)
             })
       </script>
 </body>
