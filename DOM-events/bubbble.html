@@ -5,10 +5,56 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Bubble Events</title>
+      <style>
+            body {
+                  margin: 2px;
+                  border: 2px solid red;
+            }
+
+            section {
+                  margin: 2px;
+                  border: 2px solid blue;
+            }
+
+            ol {
+                  margin: 2px;
+                  border: 2px solid purple;
+            }
+
+            li {
+                  margin: 2px;
+                  border: 2px solid green;
+            }
+      </style>
 </head>
 
 <body>
-      <button onclick=""></button>
+      <h1>Explore Event Bubble </h1>
+      <section id="section-container">
+            <h3>List of things</h3>
+            <ol id="ol-list">
+                  <li id="item-1">Lorem, ipsum.</li>
+                  <li id="item-2">Pariatur, autem?</li>
+                  <li id="item-3">Quae, qui!</li>
+                  <li id="item-4">Soluta, veritatis!</li>
+                  <li id="item-5">Illo, atque?</li>
+                  <li id="item-6">Voluptatum, vitae.</li>
+            </ol>
+      </section>
+      <script>
+            // item 2 click hendaler
+            document.getElementById('item-2').addEventListener('click', function () {
+                  console.log('items 2 is clicked')
+            })
+            // oder list click hendaler
+            document.getElementById('ol-list').addEventListener('click', function () {
+                  console.log('oder list is clicked')
+            })
+            // section container is clicked
+            document.getElementById('section-container').addEventListener('click', function () {
+                  console.log('section container is clicked')
+            })
+      </script>
 </body>
 
 </html>
