@@ -28,7 +28,7 @@
       </style>
 </head>
 
-<body>
+<body id="all-body">
       <h1>Explore Event Bubble </h1>
       <section id="section-container">
             <h3>List of things</h3>
@@ -43,8 +43,18 @@
       </section>
       <script>
             // item 2 click hendaler
-            document.getElementById('item-2').addEventListener('click', function () {
+            document.getElementById('item-2').addEventListener('click', function (event) {
                   console.log('items 2 is clicked')
+                  // event.stopPropagation()
+                  event.stopImmediatePropagation()
+            })
+            // item 2 click hendaler
+            document.getElementById('item-2').addEventListener('click', function (event) {
+                  console.log('items 2 second is clicked')
+            })
+            // item 2 click hendaler
+            document.getElementById('item-2').addEventListener('click', function (event) {
+                  console.log('items 2 third is clicked')
             })
             // oder list click hendaler
             document.getElementById('ol-list').addEventListener('click', function () {
@@ -53,6 +63,10 @@
             // section container is clicked
             document.getElementById('section-container').addEventListener('click', function () {
                   console.log('section container is clicked')
+            })
+            // all body clicked 
+            document.getElementById('all-body').addEventListener('click', function () {
+                  console.log('full body click container')
             })
       </script>
 </body>
