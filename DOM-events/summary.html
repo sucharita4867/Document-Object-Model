@@ -9,11 +9,45 @@
 
 <body>
       <h1>DOM Events Summary</h1>
-      <input type="text" name="" id="" placeholder="Your Name">
-      <button>Add Name</button>
-      <div>
+      <input type="text" name="" id="user-name" placeholder="Your Name">
+      <button onclick="addName()">Add Name</button>
+      <button id="btn-add-name">Add Name 2</button>
+      <div id="name-container">
 
       </div>
+      <script>
+            function addName() {
+                  // console.log('btn is clicked')
+                  // const userName = document.getElementById('user-name')
+                  // const newName = userName.value
+                  // // console.log(newName)
+                  // // parent
+                  // const nameDiv = document.getElementById('name-container')
+                  // // create p
+                  // const p = document.createElement('p')
+                  // p.innerText = newName
+                  // // append
+                  // nameDiv.appendChild(p)
+                  // userName.value = ''
+            }
+            // addeventlistener
+            document.getElementById('btn-add-name').addEventListener('click', function () {
+                  // 1
+                  // console.log('btn 2 clicked')
+                  // 2
+                  const nameInput = document.getElementById('user-name')
+                  const newInput = nameInput.value
+                  console.log(newInput)
+                  // 3
+                  const newElementParent = document.getElementById('name-container')
+                  // 4 create new element
+                  const p = document.createElement('p')
+                  p.innerText = (newInput)
+                  // 5
+                  newElementParent.appendChild(p)
+                  nameInput.value = ''
+            })
+      </script>
 </body>
 
 </html>
