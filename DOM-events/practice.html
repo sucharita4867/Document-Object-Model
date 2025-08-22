@@ -43,9 +43,9 @@
                   <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur.</p>
                   <p id="text">Aut possimus quae laborum repudiandae laboriosam dolorem quos soluta ea.</p>
                   <p id="text">Voluptas distinctio labore odit harum, velit inventore corrupti blanditiis animi!</p>
-                  <input type="text" name="" id="text-input">
-                  <button id="text-btn">Add Comment</button>
             </div>
+            <input type="text" name="" id="text-input">
+            <button id="text-btn">Add Comment</button>
             <div id="list-container">
                   <ul id="item-container">
                         <li class="item">apple</li>
@@ -53,6 +53,7 @@
                         <li class="item">papaya</li>
                   </ul>
             </div>
+            <input type="text" name="" id="list-input">
             <button id="list-btn">Add Foods</button>
       </section>
       <script>
@@ -71,6 +72,9 @@
                   // // 
                   textContainer.appendChild(p)
                   textInput.value = ''
+            })
+            document.getElementById('list-btn').addEventListener('dblclick', function () {
+                  console.log('list btn clicked')
             })
       </script>
       <script src="js/practice.js"></script>
