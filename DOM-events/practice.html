@@ -5,23 +5,75 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Practice Events</title>
+      <style>
+            #text-container {
+                  border: 2px solid red;
+                  background-color: lightblue;
+                  border-radius: 10px;
+                  padding: 10px;
+                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            button {
+                  border: 2px solid brown;
+                  margin-top: 5px;
+                  padding: 8px;
+                  border-radius: 6px;
+                  background-color: lightcoral;
+            }
+
+            .item {
+                  border: 1px solid purple;
+                  margin-bottom: 2px;
+                  padding: 5px;
+                  background-color: lightcyan;
+            }
+
+            /* #text-input {
+                  padding-left: 8px;
+            } */
+      </style>
+
 </head>
 
 <body>
       <section>
-            <div>
+            <h1>Practice Events</h1>
+            <div id="text-container">
                   <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aspernatur.</p>
                   <p id="text">Aut possimus quae laborum repudiandae laboriosam dolorem quos soluta ea.</p>
                   <p id="text">Voluptas distinctio labore odit harum, velit inventore corrupti blanditiis animi!</p>
+                  <input type="text" name="" id="text-input">
+                  <button id="text-btn">Add Comment</button>
             </div>
-            <div>
+            <div id="list-container">
                   <ul id="item-container">
                         <li class="item">apple</li>
                         <li class="item">mango</li>
                         <li class="item">papaya</li>
                   </ul>
             </div>
+            <button id="list-btn">Add Foods</button>
       </section>
+      <script>
+            document.getElementById('text-btn').addEventListener('click', function () {
+                  // console.log('p text container')
+                  const textInput = document.getElementById('text-input')
+                  // console.log('text input working')
+                  const inputText = textInput.value
+                  console.log(inputText)
+                  // // 
+                  const textContainer = document.getElementById('text-container')
+                  // // 
+                  const p = document.createElement('p')
+                  p.innerText = (inputText)
+                  // console.log(inputText)
+                  // // 
+                  textContainer.appendChild(p)
+                  textInput.value = ''
+            })
+      </script>
+      <script src="js/practice.js"></script>
 </body>
 
 </html>
