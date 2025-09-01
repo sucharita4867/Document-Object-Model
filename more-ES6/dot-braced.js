@@ -5,4 +5,6 @@ const student = {
 };
 // console.log(student["age-number"]);
 const num = { student };
-console.log(num.student.proffation);
+// console.log(num.student.proffation);
+
+console.log(student.num);
