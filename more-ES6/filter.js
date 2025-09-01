@@ -4,4 +4,6 @@ const graterThan10 = numbers.filter((x) => x > 5);
 const even = numbers.filter((num) => num % 2 === 0);
 // console.log(even);
 const multiplay = numbers.filter((i) => i < 10);
-console.log(multiplay);
+// console.log(multiplay);
+const oddNumber = numbers.filter((z) => z % 2 !== 0);
+console.log(oddNumber);
