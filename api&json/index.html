@@ -5,14 +5,37 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>JSON & API</title>
+      <style>
+            #post-container {
+                  text-align: center;
+                  margin: 50px, auto;
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-gap: 20px;
+                  padding: 10px;
+
+            }
+
+            .card {
+                  border: 2px solid black;
+                  border-radius: 10px;
+                  height: 100%;
+                  padding: 10px;
+                  background-color: lightblue;
+
+            }
+      </style>
 </head>
 
 <body>
       <h1>JSON & API</h1>
       <button onclick="loadData()">Load Data</button>
       <button onclick="loadPost()">Load Post</button>
-      <ul id="postsContainer"></ul>
+      <div id="post-container">
+
+      </div>
       <script src="script.js"></script>
+      <script src="./script2.js"></script>
 </body>
 
 </html>

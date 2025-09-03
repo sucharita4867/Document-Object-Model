@@ -20,38 +20,46 @@
 // console.log(personJSON, typeof personJSON);
 
 // const parseJSON = JSON.parse(personJSON);
-// console.log(parseJSON, typeof parseJSON);
+// // console.log(parseJSON, typeof parseJSON);
 
-const loadData = () => {
-  fetch("https://jsonplaceholder.typicode.com/todos/1")
-    // promise of response
-    .then((response) => response.json())
-    // Promise of json data
-    .then((json) => console.log(json));
-};
+// const loadData = () => {
+//   fetch("https://jsonplaceholder.typicode.com/todos/1")
+//     // promise of response
+//     .then((response) => response.json())
+//     // Promise of json data
+//     .then((json) => console.log(json));
+// };
 
-const loadPost = () => {
-  const url = "https://jsonplaceholder.typicode.com/posts";
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      displayPost(data);
-    });
-};
-const displayPost = (posts) => {
-  // 1
-  const postsContainer = document.getElementById("postsContainer");
-  // console.log(postsContainer);
+// const loadPost = () => {
+//   const url = "https://jsonplaceholder.typicode.com/posts";
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       console.log(data);
+//       displayPost(data);
+//     });
+// };
+// const displayPost = (posts) => {
+//   // 1
+//   const postsContainer = document.getElementById("post-container");
 
-  posts.forEach((post) => {
-    // 2
-    const li = document.createElement("li");
-    li.innerText = post.title;
-    // console.log(li);
+//   // console.log(postsContainer);
 
-    // 3
-    postsContainer.appendChild(li);
-    // console.log(post);
-  });
-};
+//   posts.forEach((post) => {
+//     // 2
+//     const div = document.createElement("div");
+//     div.innerHTML = `
+//   <div class="card">
+//                   <h3 class="title">${post.title}.</h3>
+//                   <p class="description">${post.body}</p>
+//             </div>
+//   `;
+//     // li.innerText = post.title;
+//     // console.log(li);
+
+//     // 3
+//     postsContainer.appendChild(div);
+//     // console.log(post);
+//   });
+// };
+// loadPost();
