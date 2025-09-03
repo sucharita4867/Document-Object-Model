@@ -40,7 +40,18 @@ const loadPost = () => {
     });
 };
 const displayPost = (posts) => {
+  // 1
+  const postsContainer = document.getElementById("postsContainer");
+  // console.log(postsContainer);
+
   posts.forEach((post) => {
-    console.log(post);
+    // 2
+    const li = document.createElement("li");
+    li.innerText = post.title;
+    // console.log(li);
+
+    // 3
+    postsContainer.appendChild(li);
+    // console.log(post);
   });
 };
