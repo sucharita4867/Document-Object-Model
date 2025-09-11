@@ -6,7 +6,7 @@ const addNumberLS = () => {
 
 const setJectToLS = () => {
   const customer = { name: "rabi", products: 3, price: 85 };
-  console.log(customer);
+  localStorage.setItem("customer", customer);
 };
 
 const getNumberLS = () => {
