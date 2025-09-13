@@ -7,5 +7,6 @@ const oddNum = numbers.filter((num) => num % 2 === 1);
 const array = numbers.map((num) => num + 10);
 // console.log(array);
 const num = numbers.find((number) => number < 10);
-console.log(num);
+// console.log(num);
 // const double = numbers.map((x) => x * 4);
+console.log(...numbers);
