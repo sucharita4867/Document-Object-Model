@@ -6,4 +6,6 @@ const even = numbers.filter((num) => num % 2 === 0);
 const multiplay = numbers.filter((i) => i < 10);
 // console.log(multiplay);
 const oddNumber = numbers.filter((z) => z % 2 !== 0);
-console.log(oddNumber);
+// console.log(oddNumber);
+const even1 = numbers.filter((x) => x % 2 === 0);
+console.log(even1);
